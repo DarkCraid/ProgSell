@@ -24,12 +24,14 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
 
 	<div class="wrapper">
 	    <div class="sidebar" data-color="purple" data-image="<?= base_url('assets/img/sidebar-1.jpg');?>">
+
 			<!--
 		        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
@@ -45,56 +47,56 @@
 	    	<div class="sidebar-wrapper">
 				<ul class="nav">
 					<li>
-	                    <a href="<?= base_url('index.php/Inicio');?>">
+	                    <a href="<?= base_url('index.php/Template');?>">
 	                        <i class="material-icons">Template</i>
 	                        <p>Template</p>
 	                    </a>
 	                </li>
 
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/dashboard');?>">
+	                    <a href="<?= base_url('index.php/Template/dashboard');?>">
 	                        <i class="material-icons">dashboard</i>
 	                        <p>Dashboard</p>
 	                    </a>
 	                </li>
 	                <li class="active">
-	                    <a href="<?= base_url('index.php/Inicio/user');?>">
+	                    <a href="<?= base_url('index.php/Template/user');?>">
 	                        <i class="material-icons">person</i>
 	                        <p>User Profile</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/table');?>">
+	                    <a href="<?= base_url('index.php/Template/table');?>">
 	                        <i class="material-icons">content_paste</i>
 	                        <p>Table List</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/typography');?>">
+	                    <a href="<?= base_url('index.php/Template/typography');?>">
 	                        <i class="material-icons">library_books</i>
 	                        <p>Typography</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/icons');?>">
+	                    <a href="<?= base_url('index.php/Template/icons');?>">
 	                        <i class="material-icons">bubble_chart</i>
 	                        <p>Icons</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/maps');?>">
+	                    <a href="<?= base_url('index.php/Template/maps');?>">
 	                        <i class="material-icons">location_on</i>
 	                        <p>Maps</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/notifications');?>">
+	                    <a href="<?= base_url('index.php/Template/notifications');?>">
 	                        <i class="material-icons text-gray">notifications</i>
 	                        <p>Notifications</p>
 	                    </a>
 	                </li>
 					<li class="active-pro">
-                        <a href="<?= base_url('index.php/Inicio/upgrade');?>">
+                        <a href="<?= base_url('index.php/Template/upgrade');?>">
 	                        <i class="material-icons">unarchive</i>
 	                        <p>Upgrade to PRO</p>
 	                    </a>
@@ -113,7 +115,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">Profile</a>
+						<a class="navbar-brand" href="#">Upgrade</a>
 					</div>
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-right">
@@ -160,118 +162,78 @@
 
 	        <div class="content">
 	            <div class="container-fluid">
-	                <div class="row">
-	                    <div class="col-md-8">
-	                        <div class="card">
-	                            <div class="card-header" data-background-color="purple">
-	                                <h4 class="title">Edit Profile</h4>
-									<p class="category">Complete your profile</p>
-	                            </div>
-	                            <div class="card-content">
-	                                <form>
-	                                    <div class="row">
-	                                        <div class="col-md-5">
-												<div class="form-group label-floating">
-													<label class="control-label">Company (disabled)</label>
-													<input type="text" class="form-control" disabled>
-												</div>
-	                                        </div>
-	                                        <div class="col-md-3">
-												<div class="form-group label-floating">
-													<label class="control-label">Username</label>
-													<input type="text" class="form-control" >
-												</div>
-	                                        </div>
-	                                        <div class="col-md-4">
-												<div class="form-group label-floating">
-													<label class="control-label">Email address</label>
-													<input type="email" class="form-control" >
-												</div>
-	                                        </div>
-	                                    </div>
-
-	                                    <div class="row">
-	                                        <div class="col-md-6">
-												<div class="form-group label-floating">
-													<label class="control-label">Fist Name</label>
-													<input type="text" class="form-control" >
-												</div>
-	                                        </div>
-	                                        <div class="col-md-6">
-												<div class="form-group label-floating">
-													<label class="control-label">Last Name</label>
-													<input type="text" class="form-control" >
-												</div>
-	                                        </div>
-	                                    </div>
-
-	                                    <div class="row">
-	                                        <div class="col-md-12">
-												<div class="form-group label-floating">
-													<label class="control-label">Adress</label>
-													<input type="text" class="form-control" >
-												</div>
-	                                        </div>
-	                                    </div>
-
-	                                    <div class="row">
-	                                        <div class="col-md-4">
-												<div class="form-group label-floating">
-													<label class="control-label">City</label>
-													<input type="text" class="form-control" >
-												</div>
-	                                        </div>
-	                                        <div class="col-md-4">
-												<div class="form-group label-floating">
-													<label class="control-label">Country</label>
-													<input type="text" class="form-control" >
-												</div>
-	                                        </div>
-	                                        <div class="col-md-4">
-												<div class="form-group label-floating">
-													<label class="control-label">Postal Code</label>
-													<input type="text" class="form-control" >
-												</div>
-	                                        </div>
-	                                    </div>
-
-	                                    <div class="row">
-	                                        <div class="col-md-12">
-	                                            <div class="form-group">
-	                                                <label>About Me</label>
-													<div class="form-group label-floating">
-									    				<label class="control-label"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
-								    					<textarea class="form-control" rows="5"></textarea>
-		                        					</div>
-	                                            </div>
-	                                        </div>
-	                                    </div>
-
-	                                    <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
-	                                    <div class="clearfix"></div>
-	                                </form>
-	                            </div>
-	                        </div>
-	                    </div>
-						<div class="col-md-4">
-    						<div class="card card-profile">
-    							<div class="card-avatar">
-    								<a href="#pablo">
-    									<img class="img" src="<?= base_url('assets/img/faces/marc.jpg');?>" />
-    								</a>
-    							</div>
-
-    							<div class="content">
-    								<h6 class="category text-gray">CEO / Co-Founder</h6>
-    								<h4 class="card-title">Alec Thompson</h4>
-    								<p class="card-content">
-    									Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-    								</p>
-    								<a href="#pablo" class="btn btn-primary btn-round">Follow</a>
-    							</div>
-    						</div>
-		    			</div>
-	                </div>
+                    <div class="row">
+    					<div class="col-md-8 col-md-offset-2">
+                            <div class="card">
+                                <div class="card-header text-center" data-background-color="purple">
+                                    <h4 class="title">Material Dashboard PRO</h3>
+                                    <p class="category">Are you looking for more components? Please check our Premium Version of Material Dashboard.</p>
+                                </div>
+                                <div class="card-content">
+                                    <div class="table-responsive table-upgrade">
+                                        <table class="table">
+                                            <thead>
+                                                <th></th>
+                                            	<th class="text-center">Free</th>
+                                            	<th class="text-center">PRO</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                	<td>Components</td>
+                                                	<td class="text-center">60</td>
+                                                	<td class="text-center">200</td>
+                                                </tr>
+                                                <tr>
+                                                	<td>Plugins</td>
+                                                	<td class="text-center">2</td>
+                                                	<td class="text-center">15</td>
+                                                </tr>
+                                                <tr>
+                                                	<td>Example Pages</td>
+                                                	<td class="text-center">3</td>
+                                                	<td class="text-center">27</td>
+                                                </tr>
+												<tr>
+                                                	<td>Login, Register, Pricing, Lock Pages</td>
+        											<td class="text-center"><i class="fa fa-times text-danger"></i></td>
+                                                	<td class="text-center"><i class="fa fa-check text-success"></td>
+                                                </tr>
+												<tr>
+                                                	<td>DataTables, VectorMap, SweetAlert, Wizard, jQueryValidation, FullCalendar etc...</td>
+        											<td class="text-center"><i class="fa fa-times text-danger"></i></td>
+                                                	<td class="text-center"><i class="fa fa-check text-success"></td>
+                                                </tr>
+												<tr>
+                                                	<td>Mini Sidebar</td>
+        											<td class="text-center"><i class="fa fa-times text-danger"></i></td>
+                                                	<td class="text-center"><i class="fa fa-check text-success"></td>
+                                                </tr>
+        										<tr>
+                                                	<td>Premium Support</td>
+        											<td class="text-center"><i class="fa fa-times text-danger"></i></td>
+                                                	<td class="text-center"><i class="fa fa-check text-success"></td>
+                                                </tr>
+        										<tr>
+                                                	<td></td>
+        											<td class="text-center">Free</td>
+                                                	<td class="text-center">Just $49</td>
+                                                </tr>
+        										<tr>
+        											<td class="text-center"></td>
+        											<td class="text-center">
+        												<a href="#" class="btn btn-round btn-fill btn-default disabled">Current Version</a>
+        											</td>
+        											<td class="text-center">
+        												<a target="_blank" href="http://www.creative-tim.com/product/material-dashboard-pro/?ref=md-free-upgrade-archive" class="btn btn-round btn-fill btn-info">Upgrade to PRO</a>
+        											</td>
+        										</tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 	            </div>
 	        </div>
 

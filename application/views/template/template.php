@@ -24,13 +24,12 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
-
 </head>
 
 <body>
 
 	<div class="wrapper">
-	    <div class="sidebar" data-color="purple" data-image="<?= base_url('assets/img/sidebar-1.jpg');?>">
+	    <div class="sidebar" data-color="purple" data-image="<?= base_url('');?>../assets/img/sidebar-1.jpg">
 
 			<!--
 		        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
@@ -47,63 +46,63 @@
 	    	<div class="sidebar-wrapper">
 				<ul class="nav">
 					<li>
-	                    <a href="<?= base_url('index.php/Inicio');?>">
+	                    <a href="<?= base_url('index.php/Template');?>">
 	                        <i class="material-icons">Template</i>
 	                        <p>Template</p>
 	                    </a>
 	                </li>
 
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/dashboard');?>">
+	                    <a href="<?= base_url('index.php/Template/dashboard');?>">
 	                        <i class="material-icons">dashboard</i>
 	                        <p>Dashboard</p>
 	                    </a>
 	                </li>
 	                <li class="active">
-	                    <a href="<?= base_url('index.php/Inicio/user');?>">
+	                    <a href="<?= base_url('index.php/Template/user');?>">
 	                        <i class="material-icons">person</i>
 	                        <p>User Profile</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/table');?>">
+	                    <a href="<?= base_url('index.php/Template/table');?>">
 	                        <i class="material-icons">content_paste</i>
 	                        <p>Table List</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/typography');?>">
+	                    <a href="<?= base_url('index.php/Template/typography');?>">
 	                        <i class="material-icons">library_books</i>
 	                        <p>Typography</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/icons');?>">
+	                    <a href="<?= base_url('index.php/Template/icons');?>">
 	                        <i class="material-icons">bubble_chart</i>
 	                        <p>Icons</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/maps');?>">
+	                    <a href="<?= base_url('index.php/Template/maps');?>">
 	                        <i class="material-icons">location_on</i>
 	                        <p>Maps</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/notifications');?>">
+	                    <a href="<?= base_url('index.php/Template/notifications');?>">
 	                        <i class="material-icons text-gray">notifications</i>
 	                        <p>Notifications</p>
 	                    </a>
 	                </li>
 					<li class="active-pro">
-                        <a href="<?= base_url('index.php/Inicio/upgrade');?>">
+                        <a href="<?= base_url('index.php/Template/upgrade');?>">
 	                        <i class="material-icons">unarchive</i>
 	                        <p>Upgrade to PRO</p>
 	                    </a>
                     </li>
 	            </ul>
 	    	</div>
-	    </div>
+		</div>
 
 	    <div class="main-panel">
 			<nav class="navbar navbar-transparent navbar-absolute">
@@ -115,7 +114,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">Upgrade</a>
+						<a class="navbar-brand" href="#">Table List</a>
 					</div>
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-right">
@@ -126,18 +125,18 @@
 								</a>
 							</li>
 							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-									<i class="material-icons">notifications</i>
-									<span class="notification">5</span>
-									<p class="hidden-lg hidden-md">Notifications</p>
-								</a>
-								<ul class="dropdown-menu">
+								  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+										<i class="material-icons">notifications</i>
+										<span class="notification">5</span>
+										<p class="hidden-lg hidden-md">Notifications</p>
+								  </a>
+								  <ul class="dropdown-menu">
 									<li><a href="#">Mike John responded to your email</a></li>
 									<li><a href="#">You have 5 new tasks</a></li>
 									<li><a href="#">You're now friend with Andrew</a></li>
 									<li><a href="#">Another Notification</a></li>
 									<li><a href="#">Another One</a></li>
-								</ul>
+								  </ul>
 							</li>
 							<li>
 								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
@@ -162,82 +161,12 @@
 
 	        <div class="content">
 	            <div class="container-fluid">
-                    <div class="row">
-    					<div class="col-md-8 col-md-offset-2">
-                            <div class="card">
-                                <div class="card-header text-center" data-background-color="purple">
-                                    <h4 class="title">Material Dashboard PRO</h3>
-                                    <p class="category">Are you looking for more components? Please check our Premium Version of Material Dashboard.</p>
-                                </div>
-                                <div class="card-content">
-                                    <div class="table-responsive table-upgrade">
-                                        <table class="table">
-                                            <thead>
-                                                <th></th>
-                                            	<th class="text-center">Free</th>
-                                            	<th class="text-center">PRO</th>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                	<td>Components</td>
-                                                	<td class="text-center">60</td>
-                                                	<td class="text-center">200</td>
-                                                </tr>
-                                                <tr>
-                                                	<td>Plugins</td>
-                                                	<td class="text-center">2</td>
-                                                	<td class="text-center">15</td>
-                                                </tr>
-                                                <tr>
-                                                	<td>Example Pages</td>
-                                                	<td class="text-center">3</td>
-                                                	<td class="text-center">27</td>
-                                                </tr>
-												<tr>
-                                                	<td>Login, Register, Pricing, Lock Pages</td>
-        											<td class="text-center"><i class="fa fa-times text-danger"></i></td>
-                                                	<td class="text-center"><i class="fa fa-check text-success"></td>
-                                                </tr>
-												<tr>
-                                                	<td>DataTables, VectorMap, SweetAlert, Wizard, jQueryValidation, FullCalendar etc...</td>
-        											<td class="text-center"><i class="fa fa-times text-danger"></i></td>
-                                                	<td class="text-center"><i class="fa fa-check text-success"></td>
-                                                </tr>
-												<tr>
-                                                	<td>Mini Sidebar</td>
-        											<td class="text-center"><i class="fa fa-times text-danger"></i></td>
-                                                	<td class="text-center"><i class="fa fa-check text-success"></td>
-                                                </tr>
-        										<tr>
-                                                	<td>Premium Support</td>
-        											<td class="text-center"><i class="fa fa-times text-danger"></i></td>
-                                                	<td class="text-center"><i class="fa fa-check text-success"></td>
-                                                </tr>
-        										<tr>
-                                                	<td></td>
-        											<td class="text-center">Free</td>
-                                                	<td class="text-center">Just $49</td>
-                                                </tr>
-        										<tr>
-        											<td class="text-center"></td>
-        											<td class="text-center">
-        												<a href="#" class="btn btn-round btn-fill btn-default disabled">Current Version</a>
-        											</td>
-        											<td class="text-center">
-        												<a target="_blank" href="http://www.creative-tim.com/product/material-dashboard-pro/?ref=md-free-upgrade-archive" class="btn btn-round btn-fill btn-info">Upgrade to PRO</a>
-        											</td>
-        										</tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+	                <div class="row">
+
+	                </div>
 	            </div>
 	        </div>
-
-	        <footer class="footer">
+			<footer class="footer">
 	            <div class="container-fluid">
 	                <nav class="pull-left">
 	                    <ul>
@@ -246,21 +175,7 @@
 	                                Home
 	                            </a>
 	                        </li>
-	                        <li>
-	                            <a href="#">
-	                                Company
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="#">
-	                                Portfolio
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="#">
-	                               Blog
-	                            </a>
-	                        </li>
+
 	                    </ul>
 	                </nav>
 	                <p class="copyright pull-right">
@@ -292,5 +207,6 @@
 
 	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
 	<script src="<?= base_url('assets/js/demo.js');?>"></script>
+
 
 </html>

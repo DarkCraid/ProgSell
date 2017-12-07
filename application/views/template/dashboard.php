@@ -45,56 +45,56 @@
 	    	<div class="sidebar-wrapper">
 				<ul class="nav">
 					<li>
-	                    <a href="<?= base_url('index.php/Inicio');?>">
+	                    <a href="<?= base_url('index.php/Template');?>">
 	                        <i class="material-icons">Template</i>
 	                        <p>Template</p>
 	                    </a>
 	                </li>
 
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/dashboard');?>">
+	                    <a href="<?= base_url('index.php/Template/dashboard');?>">
 	                        <i class="material-icons">dashboard</i>
 	                        <p>Dashboard</p>
 	                    </a>
 	                </li>
 	                <li class="active">
-	                    <a href="<?= base_url('index.php/Inicio/user');?>">
+	                    <a href="<?= base_url('index.php/Template/user');?>">
 	                        <i class="material-icons">person</i>
 	                        <p>User Profile</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/table');?>">
+	                    <a href="<?= base_url('index.php/Template/table');?>">
 	                        <i class="material-icons">content_paste</i>
 	                        <p>Table List</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/typography');?>">
+	                    <a href="<?= base_url('index.php/Template/typography');?>">
 	                        <i class="material-icons">library_books</i>
 	                        <p>Typography</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/icons');?>">
+	                    <a href="<?= base_url('index.php/Template/icons');?>">
 	                        <i class="material-icons">bubble_chart</i>
 	                        <p>Icons</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/maps');?>">
+	                    <a href="<?= base_url('index.php/Template/maps');?>">
 	                        <i class="material-icons">location_on</i>
 	                        <p>Maps</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/notifications');?>">
+	                    <a href="<?= base_url('index.php/Template/notifications');?>">
 	                        <i class="material-icons text-gray">notifications</i>
 	                        <p>Notifications</p>
 	                    </a>
 	                </li>
 					<li class="active-pro">
-                        <a href="<?= base_url('index.php/Inicio/upgrade');?>">
+                        <a href="<?= base_url('index.php/Template/upgrade');?>">
 	                        <i class="material-icons">unarchive</i>
 	                        <p>Upgrade to PRO</p>
 	                    </a>
