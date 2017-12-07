@@ -29,8 +29,7 @@
 <body>
 
 	<div class="wrapper">
-	    <div class="sidebar" data-color="purple" data-image="<?= base_url('');?>../assets/img/sidebar-1.jpg">
-
+	    <div class="sidebar" data-color="purple" data-image="<?= base_url('assets/img/sidebar-1.jpg');?>">
 			<!--
 		        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
@@ -46,66 +45,62 @@
 	    	<div class="sidebar-wrapper">
 				<ul class="nav">
 					<li>
-	                    <a href="<?= base_url('index.php/Inicio');?>">
+	                    <a href="<?= base_url('index.php/Template');?>">
 	                        <i class="material-icons">Template</i>
 	                        <p>Template</p>
 	                    </a>
 	                </li>
 
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/dashboard');?>">
+	                    <a href="<?= base_url('index.php/Template/dashboard');?>">
 	                        <i class="material-icons">dashboard</i>
 	                        <p>Dashboard</p>
 	                    </a>
 	                </li>
 	                <li class="active">
-	                    <a href="<?= base_url('index.php/Inicio/user');?>">
+	                    <a href="<?= base_url('index.php/Template/user');?>">
 	                        <i class="material-icons">person</i>
 	                        <p>User Profile</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/table');?>">
+	                    <a href="<?= base_url('index.php/Template/table');?>">
 	                        <i class="material-icons">content_paste</i>
 	                        <p>Table List</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/typography');?>">
+	                    <a href="<?= base_url('index.php/Template/typography');?>">
 	                        <i class="material-icons">library_books</i>
 	                        <p>Typography</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/icons');?>">
+	                    <a href="<?= base_url('index.php/Template/icons');?>">
 	                        <i class="material-icons">bubble_chart</i>
 	                        <p>Icons</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/maps');?>">
+	                    <a href="<?= base_url('index.php/Template/maps');?>">
 	                        <i class="material-icons">location_on</i>
 	                        <p>Maps</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/notifications');?>">
+	                    <a href="<?= base_url('index.php/Template/notifications');?>">
 	                        <i class="material-icons text-gray">notifications</i>
 	                        <p>Notifications</p>
 	                    </a>
 	                </li>
 					<li class="active-pro">
-                        <a href="<?= base_url('index.php/Inicio/upgrade');?>">
+                        <a href="<?= base_url('index.php/Template/upgrade');?>">
 	                        <i class="material-icons">unarchive</i>
 	                        <p>Upgrade to PRO</p>
 	                    </a>
                     </li>
 	            </ul>
 	    	</div>
-
-
-
-
 		</div>
 
 	    <div class="main-panel">
@@ -118,7 +113,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">Table List</a>
+						<a class="navbar-brand" href="#">Google Maps</a>
 					</div>
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-right">
@@ -129,18 +124,18 @@
 								</a>
 							</li>
 							<li class="dropdown">
-								  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-										<i class="material-icons">notifications</i>
-										<span class="notification">5</span>
-										<p class="hidden-lg hidden-md">Notifications</p>
-								  </a>
-								  <ul class="dropdown-menu">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="material-icons">notifications</i>
+									<span class="notification">5</span>
+									<p class="hidden-lg hidden-md">Notifications</p>
+								</a>
+								<ul class="dropdown-menu">
 									<li><a href="#">Mike John responded to your email</a></li>
 									<li><a href="#">You have 5 new tasks</a></li>
 									<li><a href="#">You're now friend with Andrew</a></li>
 									<li><a href="#">Another Notification</a></li>
 									<li><a href="#">Another One</a></li>
-								  </ul>
+								</ul>
 							</li>
 							<li>
 								<a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
@@ -163,30 +158,8 @@
 				</div>
 			</nav>
 
-	        <div class="content">
-	            <div class="container-fluid">
-	                <div class="row">
+			<div id="map"></div>
 
-	                </div>
-	            </div>
-	        </div>
-			<footer class="footer">
-	            <div class="container-fluid">
-	                <nav class="pull-left">
-	                    <ul>
-	                        <li>
-	                            <a href="#">
-	                                Home
-	                            </a>
-	                        </li>
-
-	                    </ul>
-	                </nav>
-	                <p class="copyright pull-right">
-	                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
-	                </p>
-	            </div>
-	        </footer>
 	    </div>
 	</div>
 
@@ -212,5 +185,10 @@
 	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
 	<script src="<?= base_url('assets/js/demo.js');?>"></script>
 
+    <script>
+        $().ready(function(){
+            demo.initGoogleMaps();
+        });
+    </script>
 
 </html>

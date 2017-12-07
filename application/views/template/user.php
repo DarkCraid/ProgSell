@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png" />
-	<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+	<link rel="apple-touch-icon" sizes="76x76" href="<?= base_url('assets/img/apple-icon.png');?>" />
+	<link rel="icon" type="image/png" href="<?= base_url('assets/img/favicon.png');?>" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 	<title>Material Dashboard by Creative Tim</title>
@@ -13,25 +13,23 @@
 
 
     <!-- Bootstrap core CSS     -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="<?= base_url('assets/css/bootstrap.min.css');?>" rel="stylesheet" />
 
     <!--  Material Dashboard CSS    -->
-    <link href="../assets/css/material-dashboard.css" rel="stylesheet"/>
+    <link href="<?= base_url('assets/css/material-dashboard.css');?>" rel="stylesheet"/>
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
-    <link href="../assets/css/demo.css" rel="stylesheet" />
+    <link href="<?= base_url('assets/css/demo.css');?>" rel="stylesheet" />
 
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
-
 </head>
 
 <body>
 
 	<div class="wrapper">
-	    <div class="sidebar" data-color="purple" data-image="../assets/img/sidebar-1.jpg">
-
+	    <div class="sidebar" data-color="purple" data-image="<?= base_url('assets/img/sidebar-1.jpg');?>">
 			<!--
 		        Tip 1: You can change the color of the sidebar using: data-color="purple | blue | green | orange | red"
 
@@ -47,56 +45,56 @@
 	    	<div class="sidebar-wrapper">
 				<ul class="nav">
 					<li>
-	                    <a href="<?= base_url('index.php/Inicio');?>">
+	                    <a href="<?= base_url('index.php/Template');?>">
 	                        <i class="material-icons">Template</i>
 	                        <p>Template</p>
 	                    </a>
 	                </li>
 
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/dashboard');?>">
+	                    <a href="<?= base_url('index.php/Template/dashboard');?>">
 	                        <i class="material-icons">dashboard</i>
 	                        <p>Dashboard</p>
 	                    </a>
 	                </li>
 	                <li class="active">
-	                    <a href="<?= base_url('index.php/Inicio/user');?>">
+	                    <a href="<?= base_url('index.php/Template/user');?>">
 	                        <i class="material-icons">person</i>
 	                        <p>User Profile</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/table');?>">
+	                    <a href="<?= base_url('index.php/Template/table');?>">
 	                        <i class="material-icons">content_paste</i>
 	                        <p>Table List</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/typography');?>">
+	                    <a href="<?= base_url('index.php/Template/typography');?>">
 	                        <i class="material-icons">library_books</i>
 	                        <p>Typography</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/icons');?>">
+	                    <a href="<?= base_url('index.php/Template/icons');?>">
 	                        <i class="material-icons">bubble_chart</i>
 	                        <p>Icons</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/maps');?>">
+	                    <a href="<?= base_url('index.php/Template/maps');?>">
 	                        <i class="material-icons">location_on</i>
 	                        <p>Maps</p>
 	                    </a>
 	                </li>
 	                <li>
-	                    <a href="<?= base_url('index.php/Inicio/notifications');?>">
+	                    <a href="<?= base_url('index.php/Template/notifications');?>">
 	                        <i class="material-icons text-gray">notifications</i>
 	                        <p>Notifications</p>
 	                    </a>
 	                </li>
 					<li class="active-pro">
-                        <a href="<?= base_url('index.php/Inicio/upgrade');?>">
+                        <a href="<?= base_url('index.php/Template/upgrade');?>">
 	                        <i class="material-icons">unarchive</i>
 	                        <p>Upgrade to PRO</p>
 	                    </a>
@@ -115,7 +113,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" href="#">Typography</a>
+						<a class="navbar-brand" href="#">Profile</a>
 					</div>
 					<div class="collapse navbar-collapse">
 						<ul class="nav navbar-nav navbar-right">
@@ -163,95 +161,116 @@
 	        <div class="content">
 	            <div class="container-fluid">
 	                <div class="row">
-	                    <div class="col-md-12">
+	                    <div class="col-md-8">
 	                        <div class="card">
 	                            <div class="card-header" data-background-color="purple">
-	                                <h4 class="title">Material Dashboard Heading</h4>
-	                                <p class="category">Created using Roboto Font Family</p>
+	                                <h4 class="title">Edit Profile</h4>
+									<p class="category">Complete your profile</p>
 	                            </div>
 	                            <div class="card-content">
-									<div id="typography">
-										<div class="title">
-											<h2>Typography</h2>
-										</div>
-										<div class="row">
-											<div class="tim-typo">
-												<h1><span class="tim-note">Header 1</span>The Life of Material Dashboard </h1>
-											</div>
-											<div class="tim-typo">
-												<h2><span class="tim-note">Header 2</span>The life of Material Dashboard </h2>
-											</div>
-											<div class="tim-typo">
-												<h3><span class="tim-note">Header 3</span>The life of Material Dashboard </h3>
-											</div>
-											<div class="tim-typo">
-												<h4><span class="tim-note">Header 4</span>The life of Material Dashboard </h4>
-											</div>
-											<div class="tim-typo">
-												<h5><span class="tim-note">Header 5</span>The life of Material Dashboard </h5>
-											</div>
-											<div class="tim-typo">
-												<h6><span class="tim-note">Header 6</span>The life of Material Dashboard </h6>
-											</div>
-											<div class="tim-typo">
-												<p><span class="tim-note">Paragraph</span>
-													I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
-											</div>
-											<div class="tim-typo">
-												<span class="tim-note">Quote</span>
-												<blockquote>
-												 <p>
-												 I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.
-												 </p>
-												 <small>
-												 Kanye West, Musician
-												 </small>
-												</blockquote>
-											</div>
+	                                <form>
+	                                    <div class="row">
+	                                        <div class="col-md-5">
+												<div class="form-group label-floating">
+													<label class="control-label">Company (disabled)</label>
+													<input type="text" class="form-control" disabled>
+												</div>
+	                                        </div>
+	                                        <div class="col-md-3">
+												<div class="form-group label-floating">
+													<label class="control-label">Username</label>
+													<input type="text" class="form-control" >
+												</div>
+	                                        </div>
+	                                        <div class="col-md-4">
+												<div class="form-group label-floating">
+													<label class="control-label">Email address</label>
+													<input type="email" class="form-control" >
+												</div>
+	                                        </div>
+	                                    </div>
 
-											<div class="tim-typo">
-												<span class="tim-note">Muted Text</span>
-												<p class="text-muted">
-												I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...
-												</p>
-											</div>
-											<div class="tim-typo">
-												<span class="tim-note">Primary Text</span>
-												<p class="text-primary">
-												I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...                        </p>
-											</div>
-											<div class="tim-typo">
-												<span class="tim-note">Info Text</span>
-												<p class="text-info">
-												I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...                        </p>
-											</div>
-											<div class="tim-typo">
-												<span class="tim-note">Success Text</span>
-												<p class="text-success">
-												I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...                        </p>
-											</div>
-											<div class="tim-typo">
-												<span class="tim-note">Warning Text</span>
-												<p class="text-warning">
-												I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...
-												</p>
-											</div>
-											<div class="tim-typo">
-												<span class="tim-note">Danger Text</span>
-												<p class="text-danger">
-												I will be the leader of a company that ends up being worth billions of dollars, because I got the answers...                        </p>
-											</div>
-											<div class="tim-typo">
-												<h2><span class="tim-note">Small Tag</span>
-													Header with small subtitle <br>
-													<small>Use "small" tag for the headers</small>
-												</h2>
-											</div>
-										</div>
-									</div>
+	                                    <div class="row">
+	                                        <div class="col-md-6">
+												<div class="form-group label-floating">
+													<label class="control-label">Fist Name</label>
+													<input type="text" class="form-control" >
+												</div>
+	                                        </div>
+	                                        <div class="col-md-6">
+												<div class="form-group label-floating">
+													<label class="control-label">Last Name</label>
+													<input type="text" class="form-control" >
+												</div>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="row">
+	                                        <div class="col-md-12">
+												<div class="form-group label-floating">
+													<label class="control-label">Adress</label>
+													<input type="text" class="form-control" >
+												</div>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="row">
+	                                        <div class="col-md-4">
+												<div class="form-group label-floating">
+													<label class="control-label">City</label>
+													<input type="text" class="form-control" >
+												</div>
+	                                        </div>
+	                                        <div class="col-md-4">
+												<div class="form-group label-floating">
+													<label class="control-label">Country</label>
+													<input type="text" class="form-control" >
+												</div>
+	                                        </div>
+	                                        <div class="col-md-4">
+												<div class="form-group label-floating">
+													<label class="control-label">Postal Code</label>
+													<input type="text" class="form-control" >
+												</div>
+	                                        </div>
+	                                    </div>
+
+	                                    <div class="row">
+	                                        <div class="col-md-12">
+	                                            <div class="form-group">
+	                                                <label>About Me</label>
+													<div class="form-group label-floating">
+									    				<label class="control-label"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
+								    					<textarea class="form-control" rows="5"></textarea>
+		                        					</div>
+	                                            </div>
+	                                        </div>
+	                                    </div>
+
+	                                    <button type="submit" class="btn btn-primary pull-right">Update Profile</button>
+	                                    <div class="clearfix"></div>
+	                                </form>
 	                            </div>
 	                        </div>
 	                    </div>
+						<div class="col-md-4">
+    						<div class="card card-profile">
+    							<div class="card-avatar">
+    								<a href="#pablo">
+    									<img class="img" src="<?= base_url('assets/img/faces/marc.jpg');?>" />
+    								</a>
+    							</div>
+
+    							<div class="content">
+    								<h6 class="category text-gray">CEO / Co-Founder</h6>
+    								<h4 class="card-title">Alec Thompson</h4>
+    								<p class="card-content">
+    									Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+    								</p>
+    								<a href="#pablo" class="btn btn-primary btn-round">Follow</a>
+    							</div>
+    						</div>
+		    			</div>
 	                </div>
 	            </div>
 	        </div>
@@ -293,23 +312,23 @@
 </body>
 
 	<!--   Core JS Files   -->
-	<script src="../assets/js/jquery-3.1.0.min.js" type="text/javascript"></script>
-	<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
-	<script src="../assets/js/material.min.js" type="text/javascript"></script>
+	<script src="<?= base_url('assets/js/jquery-3.1.0.min.js');?>" type="text/javascript"></script>
+	<script src="<?= base_url('assets/js/bootstrap.min.js');?>" type="text/javascript"></script>
+	<script src="<?= base_url('assets/js/material.min.js');?>" type="text/javascript"></script>
 
 	<!--  Charts Plugin -->
-	<script src="../assets/js/chartist.min.js"></script>
+	<script src="<?= base_url('assets/js/chartist.min.js');?>"></script>
 
 	<!--  Notifications Plugin    -->
-	<script src="../assets/js/bootstrap-notify.js"></script>
+	<script src="<?= base_url('assets/js/bootstrap-notify.js');?>"></script>
 
 	<!--  Google Maps Plugin    -->
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 
 	<!-- Material Dashboard javascript methods -->
-	<script src="../assets/js/material-dashboard.js"></script>
+	<script src="<?= base_url('assets/js/material-dashboard.js');?>"></script>
 
 	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
-	<script src="../assets/js/demo.js"></script>
+	<script src="<?= base_url('assets/js/demo.js');?>"></script>
 
 </html>
