@@ -7,7 +7,7 @@ class Inicio extends CI_Controller {
 	{
 		$this->load->view('index');
 	}
-	public function dos()
+	public function tres()
 	{
 		$this->load->view('index');
 	}
